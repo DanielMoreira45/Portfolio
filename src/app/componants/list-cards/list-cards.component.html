@@ -1,0 +1,9 @@
+<div>
+    <div class="flex">
+        <h2>Compétences</h2>
+    </div>
+    <div class="cardContainer">
+        <app-card *ngFor="let card of data" [image]="card.image" [titre]="card.titre" [description]="card.description" [url]="card.url">
+    </app-card>
+    </div>
+</div>
