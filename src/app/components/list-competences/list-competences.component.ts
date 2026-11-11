@@ -1,21 +1,18 @@
-
-import { Component, ViewChild, ViewContainerRef, ComponentFactoryResolver, AfterViewInit, ChangeDetectionStrategy } from '@angular/core';
+import { Component, ViewChild, ViewContainerRef, AfterViewInit } from '@angular/core';
 import { CompetenceComponent } from '../competence/competence.component';
 import info from '../../assets/infos_competence.json';
 
 @Component({
     selector: 'app-list-competences',
-    imports: [CompetenceComponent],
+    imports: [],
     templateUrl: './list-competences.component.html',
-    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrls: ['./list-competences.component.css']
 })
 export class ListCompetencesComponent implements AfterViewInit {
-  @ViewChild('skillsContainer', { read: ViewContainerRef, static: false }) skillsContainer!: ViewContainerRef;
+  @ViewChild('skillsContainer', { read: ViewContainerRef, static: false })
+  skillsContainer!: ViewContainerRef;
 
   data: any = info['informatique'];
-
-  constructor(private componentFactoryResolver: ComponentFactoryResolver) {}
 
   ngAfterViewInit() {
     this.createCategories();
@@ -31,9 +28,8 @@ export class ListCompetencesComponent implements AfterViewInit {
       titleElement.textContent = categoryData.titre;
       titleElement.className = 'category-title';
       titleElement.setAttribute('style', 'color: #fff; font-size: 1.5em; margin: 0;');
-      
-      categoryElement.appendChild(titleElement);
 
+      categoryElement.appendChild(titleElement);
       this.skillsContainer.element.nativeElement.appendChild(categoryElement);
       this.createCompetences(categoryData.competences, categoryElement);
     });
@@ -41,14 +37,12 @@ export class ListCompetencesComponent implements AfterViewInit {
 
   private createCompetences(competences: any, categoryElement: HTMLElement) {
     competences.forEach((competenceData: any) => {
-      const componentFactory = this.componentFactoryResolver.resolveComponentFactory(CompetenceComponent);
-      const componentRef = this.skillsContainer.createComponent(componentFactory);
-      const competenceComponent = componentRef.instance as CompetenceComponent;
+      const componentRef = this.skillsContainer.createComponent(CompetenceComponent);
 
-      competenceComponent.titre = competenceData.nom;
-      competenceComponent.pourcentage = competenceData.pourcentage;
+      componentRef.setInput('titre', competenceData.nom);
+      componentRef.setInput('pourcentage', competenceData.pourcentage);
 
       categoryElement.appendChild(componentRef.location.nativeElement);
     });
   }
-}
+}   
