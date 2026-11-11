@@ -6,7 +6,6 @@ import { CardComponent } from '../card/card.component';
 
 @Component({
     selector: 'app-list-cards',
-    standalone: true,
     imports: [CommonModule, CardComponent],
     templateUrl: './list-cards.component.html',
     styleUrl: './list-cards.component.css'

@@ -4,11 +4,10 @@ import { CompetenceComponent } from '../competence/competence.component';
 import info from '../../assets/infos_competence.json';
 
 @Component({
-  selector: 'app-list-competences',
-  standalone: true,
-  imports: [CommonModule, CompetenceComponent],
-  templateUrl: './list-competences.component.html',
-  styleUrls: ['./list-competences.component.css']
+    selector: 'app-list-competences',
+    imports: [CommonModule, CompetenceComponent],
+    templateUrl: './list-competences.component.html',
+    styleUrls: ['./list-competences.component.css']
 })
 export class ListCompetencesComponent implements AfterViewInit {
   @ViewChild('skillsContainer', { read: ViewContainerRef, static: false }) skillsContainer!: ViewContainerRef;

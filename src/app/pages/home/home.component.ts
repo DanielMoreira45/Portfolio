@@ -4,11 +4,10 @@ import { ListCompetencesComponent } from "../../componants/list-competences/list
 
 
 @Component({
-  selector: 'app-home',
-  standalone: true,
-  imports: [NavComponent, ListCompetencesComponent],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+    selector: 'app-home',
+    imports: [NavComponent, ListCompetencesComponent],
+    templateUrl: './home.component.html',
+    styleUrl: './home.component.css'
 })
 export class HomeComponent {
 

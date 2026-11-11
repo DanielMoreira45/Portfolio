@@ -2,11 +2,10 @@ import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-competence',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './competence.component.html',
-  styleUrl: './competence.component.css'
+    selector: 'app-competence',
+    imports: [CommonModule],
+    templateUrl: './competence.component.html',
+    styleUrl: './competence.component.css'
 })
 export class CompetenceComponent {
   @Input() titre!: string;
