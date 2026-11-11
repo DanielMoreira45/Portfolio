@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { NavComponent } from '../nav/nav.component';
 import { ListCardsComponent } from '../../componants/list-cards/list-cards.component';
 
@@ -6,6 +6,7 @@ import { ListCardsComponent } from '../../componants/list-cards/list-cards.compo
     selector: 'app-project',
     imports: [NavComponent, ListCardsComponent],
     templateUrl: './project.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrl: './project.component.css'
 })
 export class ProjectComponent {

@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
     selector: 'app-competence',
     imports: [CommonModule],
     templateUrl: './competence.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrl: './competence.component.css'
 })
 export class CompetenceComponent {

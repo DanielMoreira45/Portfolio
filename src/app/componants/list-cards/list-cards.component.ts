@@ -1,4 +1,4 @@
-import { Component, AfterViewInit, ViewChild, ViewContainerRef } from '@angular/core';
+import { Component, AfterViewInit, ViewChild, ViewContainerRef, ChangeDetectionStrategy } from '@angular/core';
 
 import info from '../../assets/infos_cards.json';
 import { CardComponent } from '../card/card.component';
@@ -8,6 +8,7 @@ import { CardComponent } from '../card/card.component';
     selector: 'app-list-cards',
     imports: [CardComponent],
     templateUrl: './list-cards.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrl: './list-cards.component.css'
 })
 

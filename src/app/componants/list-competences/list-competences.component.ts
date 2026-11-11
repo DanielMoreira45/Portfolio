@@ -1,5 +1,5 @@
 
-import { Component, ViewChild, ViewContainerRef, ComponentFactoryResolver, AfterViewInit } from '@angular/core';
+import { Component, ViewChild, ViewContainerRef, ComponentFactoryResolver, AfterViewInit, ChangeDetectionStrategy } from '@angular/core';
 import { CompetenceComponent } from '../competence/competence.component';
 import info from '../../assets/infos_competence.json';
 
@@ -7,6 +7,7 @@ import info from '../../assets/infos_competence.json';
     selector: 'app-list-competences',
     imports: [CompetenceComponent],
     templateUrl: './list-competences.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrls: ['./list-competences.component.css']
 })
 export class ListCompetencesComponent implements AfterViewInit {
