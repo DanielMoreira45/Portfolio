@@ -1,11 +1,11 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, ViewChild, ViewContainerRef, ComponentFactoryResolver, AfterViewInit } from '@angular/core';
 import { CompetenceComponent } from '../competence/competence.component';
 import info from '../../assets/infos_competence.json';
 
 @Component({
     selector: 'app-list-competences',
-    imports: [CommonModule, CompetenceComponent],
+    imports: [CompetenceComponent],
     templateUrl: './list-competences.component.html',
     styleUrls: ['./list-competences.component.css']
 })
