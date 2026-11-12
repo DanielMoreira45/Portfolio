@@ -6,17 +6,17 @@ import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
     imports: [CommonModule],
     templateUrl: './competence.component.html',
     changeDetection: ChangeDetectionStrategy.Eager,
-    styleUrl: './competence.component.css'
+    styleUrl: './competence.component.css',
 })
 export class CompetenceComponent {
-  @Input() titre!: string;
-  @Input() pourcentage!: number;
-  delay: number = 0.1;
+    @Input() titre!: string;
+    @Input() pourcentage!: number;
+    delay: number = 0.1;
 
-  getSkillBarStyle(): { [key: string]: string } {
-    return {
-      width: `${this.pourcentage}%`,
-      animationDelay: `${this.delay}s`
-    };
-  }
+    getSkillBarStyle(): { [key: string]: string } {
+        return {
+            width: `${this.pourcentage}%`,
+            animationDelay: `${this.delay}s`,
+        };
+    }
 }

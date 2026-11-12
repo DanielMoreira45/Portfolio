@@ -6,8 +6,6 @@ import { ListCardsComponent } from '../../components/list-cards/list-cards.compo
     imports: [ListCardsComponent],
     templateUrl: './project.component.html',
     changeDetection: ChangeDetectionStrategy.Eager,
-    styleUrl: './project.component.css'
+    styleUrl: './project.component.css',
 })
-export class ProjectComponent {
-
-}
+export class ProjectComponent {}

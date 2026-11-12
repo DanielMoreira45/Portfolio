@@ -3,21 +3,20 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { ListCardsComponent } from './list-cards.component';
 
 describe('ListCardsComponent', () => {
-  let component: ListCardsComponent;
-  let fixture: ComponentFixture<ListCardsComponent>;
+    let component: ListCardsComponent;
+    let fixture: ComponentFixture<ListCardsComponent>;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [ListCardsComponent]
-    })
-    .compileComponents();
+    beforeEach(async () => {
+        await TestBed.configureTestingModule({
+            imports: [ListCardsComponent],
+        }).compileComponents();
 
-    fixture = TestBed.createComponent(ListCardsComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+        fixture = TestBed.createComponent(ListCardsComponent);
+        component = fixture.componentInstance;
+        fixture.detectChanges();
+    });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
+    it('should create', () => {
+        expect(component).toBeTruthy();
+    });
 });

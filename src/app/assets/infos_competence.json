@@ -1,62 +1,62 @@
 {
-    "informatique":[
+    "informatique": [
         {
-            "titre":"Développement Web",
+            "titre": "Développement Web",
             "competences": [
                 {
-                    "nom":"HTML",
-                    "pourcentage":90
+                    "nom": "HTML",
+                    "pourcentage": 90
                 },
                 {
-                    "nom":"CSS",
-                    "pourcentage":80
+                    "nom": "CSS",
+                    "pourcentage": 80
                 },
                 {
-                    "nom":"JavaScript",
-                    "pourcentage":70
+                    "nom": "JavaScript",
+                    "pourcentage": 70
                 },
                 {
-                    "nom":"Angular",
-                    "pourcentage":50
+                    "nom": "Angular",
+                    "pourcentage": 50
                 },
                 {
-                    "nom":"Vue",
-                    "pourcentage":40
+                    "nom": "Vue",
+                    "pourcentage": 40
                 }
             ]
         },
         {
-            "titre":"Développement Mobile",
+            "titre": "Développement Mobile",
             "competences": [
                 {
-                    "nom":"Flutter",
-                    "pourcentage":40
+                    "nom": "Flutter",
+                    "pourcentage": 40
                 }
             ]
         },
         {
-            "titre":"Développement Logiciel",
+            "titre": "Développement Logiciel",
             "competences": [
                 {
-                    "nom":"Java",
-                    "pourcentage":70
+                    "nom": "Java",
+                    "pourcentage": 70
                 },
                 {
-                    "nom":"Python",
-                    "pourcentage":80
+                    "nom": "Python",
+                    "pourcentage": 80
                 }
             ]
         },
         {
-            "titre":"Base de données",
+            "titre": "Base de données",
             "competences": [
                 {
-                    "nom":"MySQL",
-                    "pourcentage":90
+                    "nom": "MySQL",
+                    "pourcentage": 90
                 },
                 {
-                    "nom":"PostgreSQL",
-                    "pourcentage":70
+                    "nom": "PostgreSQL",
+                    "pourcentage": 70
                 }
             ]
         }

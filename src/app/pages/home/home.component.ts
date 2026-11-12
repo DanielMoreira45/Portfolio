@@ -1,14 +1,10 @@
 import { Component, ChangeDetectionStrategy } from '@angular/core';
-import { ListCompetencesComponent } from "../../components/list-competences/list-competences.component";
-
 
 @Component({
     selector: 'app-home',
-    imports: [ListCompetencesComponent],
+    imports: [],
     templateUrl: './home.component.html',
     changeDetection: ChangeDetectionStrategy.Eager,
-    styleUrl: './home.component.css'
+    styleUrl: './home.component.css',
 })
-export class HomeComponent {
-
-}
+export class HomeComponent {}

@@ -5,8 +5,6 @@ import { Component, ChangeDetectionStrategy } from '@angular/core';
     imports: [],
     templateUrl: './contact.component.html',
     changeDetection: ChangeDetectionStrategy.Eager,
-    styleUrl: './contact.component.css'
+    styleUrl: './contact.component.css',
 })
-export class ContactComponent {
-
-}
+export class ContactComponent {}

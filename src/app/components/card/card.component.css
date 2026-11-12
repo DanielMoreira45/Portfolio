@@ -8,7 +8,7 @@
     margin: 4vh 0;
 }
 
-.card>a {
+.card > a {
     text-decoration: none;
 }
 
@@ -28,21 +28,19 @@
     text-decoration: none;
 }
 
-
 .card article h2 {
     margin: 0 0 1rem 0;
     font-size: 1.6rem;
     color: var(--secondary);
     transition: color 0.3s ease-out;
 }
-  
-  
+
 .card article img {
     max-width: 100%;
     transform-origin: center;
     transition: transform 0.4s ease-in-out;
 }
-  
+
 .article-preview {
     padding: 1.5rem;
     background: white;
@@ -62,10 +60,10 @@
 }
 
 .card article:hover img {
-    transform: scale(1.5); 
+    transform: scale(1.5);
 }
 
-.card figure{
+.card figure {
     padding: 0;
     margin: 0;
 }
