@@ -1,0 +1,15 @@
+<div>
+    <div class="flex">
+        <h2>Projets</h2>
+    </div>
+    <div class="cardContainer">
+        @for (card of data; track card.titre) {
+            <app-card
+                [image]="card.image"
+                [titre]="card.titre"
+                [description]="card.description"
+                [url]="card.url"
+            />
+        }
+    </div>
+</div>

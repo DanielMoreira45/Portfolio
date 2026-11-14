@@ -1,0 +1,13 @@
+<article class="card">
+    <div>
+        <a [href]="url()" target="_blank" rel="noopener noreferrer">
+            <figure>
+                <img [src]="image().src" [alt]="image().alt" />
+            </figure>
+            <div class="article-preview">
+                <h3>{{ titre() }}</h3>
+                <p>{{ description() }}</p>
+            </div>
+        </a>
+    </div>
+</article>

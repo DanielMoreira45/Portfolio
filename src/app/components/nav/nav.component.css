@@ -1,0 +1,37 @@
+aside.nav * {
+    margin: 0;
+    padding: 0;
+}
+
+aside.nav {
+    background-color: black;
+    width: 15vw;
+    height: 100vh;
+    padding: 4vh 2rem;
+    box-sizing: border-box;
+}
+
+aside.nav a {
+    font-size: xx-large;
+    text-decoration: none;
+    color: white;
+}
+
+aside.nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+aside.nav li > a:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.nav-title {
+    font-size: xx-large;
+    color: white;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
