@@ -1,17 +1,17 @@
 [
     {
         "titre": "Démineur",
-        "description": "Recréeation d'un démineur, en Java .",
-        "url": "#",
+        "description": "Recréeation du jeu de démineur, en Java et JavaFX. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "url": "https://github.com/DanielMoreira45/demineur",
         "image": {
-            "src": "https://img.freepik.com/free-photo/beautiful-aerial-shot-fronalpstock-mountains-switzerland-beautiful-pink-blue-sky_181624-9315.jpg?w=900&t=st=1687123407~exp=1687124007~hmac=15a1b5a4d3a5af66dfba67bdcd577f769f813bf06fc8b5e50f32f6503099bbd8",
-            "alt": "Card image cap"
+            "src": "img/Demineur.png",
+            "alt": "Image du jeu du démineur"
         }
     },
     {
         "titre": "Application de vente aux enchere",
         "description": "Recréeation d'un site de mise en enchere, en Java.",
-        "url": "#",
+        "url": "https://github.com/DanielMoreira45/SAE-VAE",
         "image": {
             "src": "https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg?w=900&t=st=1687123388~exp=1687123988~hmac=f3410d0a5c2f20aec66c7d763c789bf0aae9c5026366fe41ae7d18e05e7e406b",
             "alt": "Card image cap"

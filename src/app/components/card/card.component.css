@@ -1,14 +1,16 @@
 .card {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 auto;
     justify-content: center;
-    max-width: 75rem;
     gap: 1.5rem;
-    margin: 4vh 0;
+    margin: 4vh 0 0 0;
 }
 
-.card > a {
+.card div > a {
+    width: 20vw;
+}
+
+.card a {
     text-decoration: none;
 }
 
@@ -22,28 +24,42 @@
     border-radius: 1rem;
 }
 
-.card article a {
+.card a {
     display: inline-flex;
     color: var(--primary);
     text-decoration: none;
+    flex-direction: column;
 }
 
-.card article h2 {
+.card h2 {
     margin: 0 0 1rem 0;
     font-size: 1.6rem;
     color: var(--secondary);
     transition: color 0.3s ease-out;
 }
 
-.card article img {
+.card img {
     max-width: 100%;
     transform-origin: center;
     transition: transform 0.4s ease-in-out;
 }
 
 .article-preview {
-    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
     background: white;
+    align-items: center;
+}
+
+.article-preview h3,
+.article-preview p {
+    margin: 0.5rem 1rem;
+    text-align: center;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .card figure {
@@ -59,7 +75,7 @@
     object-fit: cover;
 }
 
-.card article:hover img {
+article.card:hover img {
     transform: scale(1.5);
 }
 
