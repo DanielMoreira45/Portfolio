@@ -8,4 +8,11 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
     changeDetection: ChangeDetectionStrategy.Eager,
     styleUrls: ['./nav.component.css'],
 })
-export class NavComponent {}
+export class NavComponent {
+    menuOpen = false;
+
+    toggleMenu() {
+        console.log('toggleMenu called');
+        this.menuOpen = !this.menuOpen;
+    }
+}

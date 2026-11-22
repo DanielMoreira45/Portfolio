@@ -1,5 +1,12 @@
-<aside class="nav">
-    <nav>
+<!-- Bouton hamburger (visible uniquement sur mobile) -->
+<button class="hamburger" (click)="toggleMenu()" aria-label="Menu">
+    <span></span>
+    <span></span>
+    <span></span>
+</button>
+
+<aside class="nav" [class.nav-open]="menuOpen">
+    <nav (click)="menuOpen = false">
         <ul>
             <li>
                 <h1 class="nav-title">
